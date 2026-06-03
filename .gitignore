@@ -42,18 +42,20 @@ build/
 ckpt_dir/
 ckpt_dir_*/
 
-# Data
-*.txt.all
-*.csv
-*.dat
-data/fat64/
-data/fat128/
-data/abilene/
-data/geant/
-data/nsfnet/
+# RouteNet-Fermi data and checkpoints
+RouteNet-Fermi-main/data/
+RouteNet-Fermi-main/testbed/
+RouteNet-Fermi-main/all_mixed/ckpt_dir/
+RouteNet-Fermi-main/all_mixed/ckpt_dir_*/
+RouteNet-Fermi-main/all_mixed/initial_weights/
+RouteNet-Fermi-main/all_mixed/few_shot/
 
-# Logs
-*.log
+# Excluded directories
+references/
+report/
+"text for analysis"/
+科研经验总结.md
+
 
 # OS
 .DS_Store
