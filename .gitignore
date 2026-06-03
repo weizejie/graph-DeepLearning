@@ -1,0 +1,60 @@
+# Large data files
+*.data
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+*.npz
+*.npy
+*.pth
+*.pt
+*.ckpt
+*.ckpt.*
+
+# Archives and compressed data
+*.tar
+*.tar.gz
+*.zip
+*.gz
+*.tgz
+*.rar
+*.7z
+
+# Data files and results
+results_*.tar.gz
+traffic.txt.all
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Checkpoints
+ckpt_dir/
+ckpt_dir_*/
+
+# Data
+*.txt.all
+*.csv
+*.dat
+data/fat64/
+data/fat128/
+data/abilene/
+data/geant/
+data/nsfnet/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db

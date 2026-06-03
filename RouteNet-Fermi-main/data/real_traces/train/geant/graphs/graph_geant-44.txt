@@ -1,0 +1,779 @@
+graph [
+  directed 1
+  multigraph 1
+  levelsToS 3
+  node [
+    id 0
+    label "0"
+    schedulingPolicy "SP"
+    schedulingWeights "-"
+    tosToQoSqueue "0;1;2"
+    levelsQoS "3"
+    bufferSizes "8000,8000,8000"
+  ]
+  node [
+    id 1
+    label "1"
+    schedulingPolicy "FIFO"
+    schedulingWeights "-"
+    tosToQoSqueue "0,1,2"
+    levelsQoS "1"
+    bufferSizes "8000"
+  ]
+  node [
+    id 2
+    label "2"
+    schedulingPolicy "WFQ"
+    schedulingWeights "80,10,10"
+    tosToQoSqueue "0;1;2"
+    levelsQoS "3"
+    bufferSizes "32000,32000,32000"
+  ]
+  node [
+    id 3
+    label "3"
+    schedulingPolicy "SP"
+    schedulingWeights "-"
+    tosToQoSqueue "0;1;2"
+    levelsQoS "3"
+    bufferSizes "32000,32000,32000"
+  ]
+  node [
+    id 4
+    label "4"
+    schedulingPolicy "SP"
+    schedulingWeights "-"
+    tosToQoSqueue "0;1;2"
+    levelsQoS "3"
+    bufferSizes "16000,16000,16000"
+  ]
+  node [
+    id 5
+    label "5"
+    schedulingPolicy "FIFO"
+    schedulingWeights "-"
+    tosToQoSqueue "0,1,2"
+    levelsQoS "1"
+    bufferSizes "8000"
+  ]
+  node [
+    id 6
+    label "6"
+    schedulingPolicy "DRR"
+    schedulingWeights "60,30,10"
+    tosToQoSqueue "0;1;2"
+    levelsQoS "3"
+    bufferSizes "32000,32000,32000"
+  ]
+  node [
+    id 7
+    label "7"
+    schedulingPolicy "DRR"
+    schedulingWeights "90,5,5"
+    tosToQoSqueue "0;1;2"
+    levelsQoS "3"
+    bufferSizes "32000,32000,32000"
+  ]
+  node [
+    id 8
+    label "8"
+    schedulingPolicy "SP"
+    schedulingWeights "-"
+    tosToQoSqueue "0;1;2"
+    levelsQoS "3"
+    bufferSizes "8000,8000,8000"
+  ]
+  node [
+    id 9
+    label "9"
+    schedulingPolicy "WFQ"
+    schedulingWeights "70,20,10"
+    tosToQoSqueue "0;1;2"
+    levelsQoS "3"
+    bufferSizes "32000,32000,32000"
+  ]
+  node [
+    id 10
+    label "10"
+    schedulingPolicy "SP"
+    schedulingWeights "-"
+    tosToQoSqueue "0;1;2"
+    levelsQoS "3"
+    bufferSizes "64000,64000,64000"
+  ]
+  node [
+    id 11
+    label "11"
+    schedulingPolicy "WFQ"
+    schedulingWeights "80,10,10"
+    tosToQoSqueue "0;1;2"
+    levelsQoS "3"
+    bufferSizes "16000,16000,16000"
+  ]
+  node [
+    id 12
+    label "12"
+    schedulingPolicy "FIFO"
+    schedulingWeights "-"
+    tosToQoSqueue "0,1,2"
+    levelsQoS "1"
+    bufferSizes "8000"
+  ]
+  node [
+    id 13
+    label "13"
+    schedulingPolicy "WFQ"
+    schedulingWeights "60,30,10"
+    tosToQoSqueue "0;1;2"
+    levelsQoS "3"
+    bufferSizes "32000,32000,32000"
+  ]
+  node [
+    id 14
+    label "14"
+    schedulingPolicy "DRR"
+    schedulingWeights "70,25,5"
+    tosToQoSqueue "0;1;2"
+    levelsQoS "3"
+    bufferSizes "64000,64000,64000"
+  ]
+  node [
+    id 15
+    label "15"
+    schedulingPolicy "WFQ"
+    schedulingWeights "80,10,10"
+    tosToQoSqueue "0;1;2"
+    levelsQoS "3"
+    bufferSizes "8000,8000,8000"
+  ]
+  node [
+    id 16
+    label "16"
+    schedulingPolicy "FIFO"
+    schedulingWeights "-"
+    tosToQoSqueue "0,1,2"
+    levelsQoS "1"
+    bufferSizes "32000"
+  ]
+  node [
+    id 17
+    label "17"
+    schedulingPolicy "SP"
+    schedulingWeights "-"
+    tosToQoSqueue "0;1;2"
+    levelsQoS "3"
+    bufferSizes "8000,8000,8000"
+  ]
+  node [
+    id 18
+    label "18"
+    schedulingPolicy "DRR"
+    schedulingWeights "60,30,10"
+    tosToQoSqueue "0;1;2"
+    levelsQoS "3"
+    bufferSizes "8000,8000,8000"
+  ]
+  node [
+    id 19
+    label "19"
+    schedulingPolicy "SP"
+    schedulingWeights "-"
+    tosToQoSqueue "0;1;2"
+    levelsQoS "3"
+    bufferSizes "8000,8000,8000"
+  ]
+  node [
+    id 20
+    label "20"
+    schedulingPolicy "DRR"
+    schedulingWeights "50,40,10"
+    tosToQoSqueue "0;1;2"
+    levelsQoS "3"
+    bufferSizes "16000,16000,16000"
+  ]
+  node [
+    id 21
+    label "21"
+    schedulingPolicy "SP"
+    schedulingWeights "-"
+    tosToQoSqueue "0;1;2"
+    levelsQoS "3"
+    bufferSizes "64000,64000,64000"
+  ]
+  edge [
+    source 0
+    target 2
+    key 0
+    bandwidth 250000000.0
+    port 0
+    weight 1
+  ]
+  edge [
+    source 0
+    target 4
+    key 0
+    bandwidth 250000000.0
+    port 1
+    weight 1
+  ]
+  edge [
+    source 0
+    target 9
+    key 0
+    bandwidth 40000000.0
+    port 2
+    weight 1
+  ]
+  edge [
+    source 0
+    target 15
+    key 0
+    bandwidth 25000000.0
+    port 3
+    weight 1
+  ]
+  edge [
+    source 0
+    target 19
+    key 0
+    bandwidth 40000000.0
+    port 4
+    weight 1
+  ]
+  edge [
+    source 1
+    target 6
+    key 0
+    bandwidth 250000000.0
+    port 0
+    weight 1
+  ]
+  edge [
+    source 1
+    target 13
+    key 0
+    bandwidth 100000.0
+    port 1
+    weight 1
+  ]
+  edge [
+    source 1
+    target 14
+    key 0
+    bandwidth 250000000.0
+    port 2
+    weight 1
+  ]
+  edge [
+    source 2
+    target 0
+    key 0
+    bandwidth 250000000.0
+    port 0
+    weight 1
+  ]
+  edge [
+    source 2
+    target 6
+    key 0
+    bandwidth 400000000.0
+    port 1
+    weight 1
+  ]
+  edge [
+    source 2
+    target 12
+    key 0
+    bandwidth 250000000.0
+    port 2
+    weight 1
+  ]
+  edge [
+    source 3
+    target 4
+    key 0
+    bandwidth 10000000.0
+    port 0
+    weight 1
+  ]
+  edge [
+    source 3
+    target 16
+    key 0
+    bandwidth 10000000.0
+    port 1
+    weight 1
+  ]
+  edge [
+    source 3
+    target 20
+    key 0
+    bandwidth 1000000.0
+    port 2
+    weight 1
+  ]
+  edge [
+    source 4
+    target 0
+    key 0
+    bandwidth 250000000.0
+    port 0
+    weight 1
+  ]
+  edge [
+    source 4
+    target 3
+    key 0
+    bandwidth 10000000.0
+    port 1
+    weight 1
+  ]
+  edge [
+    source 4
+    target 6
+    key 0
+    bandwidth 250000000.0
+    port 2
+    weight 1
+  ]
+  edge [
+    source 4
+    target 7
+    key 0
+    bandwidth 25000000.0
+    port 3
+    weight 1
+  ]
+  edge [
+    source 4
+    target 10
+    key 0
+    bandwidth 10000000.0
+    port 4
+    weight 1
+  ]
+  edge [
+    source 4
+    target 12
+    key 0
+    bandwidth 100000000.0
+    port 5
+    weight 1
+  ]
+  edge [
+    source 4
+    target 14
+    key 0
+    bandwidth 100000000.0
+    port 6
+    weight 1
+  ]
+  edge [
+    source 4
+    target 18
+    key 0
+    bandwidth 100000000.0
+    port 7
+    weight 1
+  ]
+  edge [
+    source 5
+    target 6
+    key 0
+    bandwidth 25000000.0
+    port 0
+    weight 1
+  ]
+  edge [
+    source 5
+    target 12
+    key 0
+    bandwidth 25000000.0
+    port 1
+    weight 1
+  ]
+  edge [
+    source 5
+    target 17
+    key 0
+    bandwidth 10000000.0
+    port 2
+    weight 1
+  ]
+  edge [
+    source 6
+    target 1
+    key 0
+    bandwidth 250000000.0
+    port 0
+    weight 1
+  ]
+  edge [
+    source 6
+    target 2
+    key 0
+    bandwidth 400000000.0
+    port 1
+    weight 1
+  ]
+  edge [
+    source 6
+    target 4
+    key 0
+    bandwidth 250000000.0
+    port 2
+    weight 1
+  ]
+  edge [
+    source 6
+    target 5
+    key 0
+    bandwidth 25000000.0
+    port 3
+    weight 1
+  ]
+  edge [
+    source 6
+    target 13
+    key 0
+    bandwidth 1000000.0
+    port 4
+    weight 1
+  ]
+  edge [
+    source 6
+    target 21
+    key 0
+    bandwidth 250000000.0
+    port 5
+    weight 1
+  ]
+  edge [
+    source 7
+    target 4
+    key 0
+    bandwidth 25000000.0
+    port 0
+    weight 1
+  ]
+  edge [
+    source 7
+    target 12
+    key 0
+    bandwidth 2500000.0
+    port 1
+    weight 1
+  ]
+  edge [
+    source 8
+    target 9
+    key 0
+    bandwidth 25000000.0
+    port 0
+    weight 1
+  ]
+  edge [
+    source 8
+    target 19
+    key 0
+    bandwidth 25000000.0
+    port 1
+    weight 1
+  ]
+  edge [
+    source 9
+    target 0
+    key 0
+    bandwidth 40000000.0
+    port 0
+    weight 1
+  ]
+  edge [
+    source 9
+    target 8
+    key 0
+    bandwidth 25000000.0
+    port 1
+    weight 1
+  ]
+  edge [
+    source 9
+    target 20
+    key 0
+    bandwidth 1000000.0
+    port 2
+    weight 1
+  ]
+  edge [
+    source 10
+    target 4
+    key 0
+    bandwidth 10000000.0
+    port 0
+    weight 1
+  ]
+  edge [
+    source 10
+    target 21
+    key 0
+    bandwidth 4000000.0
+    port 1
+    weight 1
+  ]
+  edge [
+    source 11
+    target 12
+    key 0
+    bandwidth 10000000.0
+    port 0
+    weight 1
+  ]
+  edge [
+    source 11
+    target 14
+    key 0
+    bandwidth 10000000.0
+    port 1
+    weight 1
+  ]
+  edge [
+    source 12
+    target 2
+    key 0
+    bandwidth 250000000.0
+    port 0
+    weight 1
+  ]
+  edge [
+    source 12
+    target 4
+    key 0
+    bandwidth 100000000.0
+    port 1
+    weight 1
+  ]
+  edge [
+    source 12
+    target 5
+    key 0
+    bandwidth 25000000.0
+    port 2
+    weight 1
+  ]
+  edge [
+    source 12
+    target 7
+    key 0
+    bandwidth 2500000.0
+    port 3
+    weight 1
+  ]
+  edge [
+    source 12
+    target 11
+    key 0
+    bandwidth 10000000.0
+    port 4
+    weight 1
+  ]
+  edge [
+    source 13
+    target 1
+    key 0
+    bandwidth 100000.0
+    port 0
+    weight 1
+  ]
+  edge [
+    source 13
+    target 6
+    key 0
+    bandwidth 1000000.0
+    port 1
+    weight 1
+  ]
+  edge [
+    source 14
+    target 1
+    key 0
+    bandwidth 250000000.0
+    port 0
+    weight 1
+  ]
+  edge [
+    source 14
+    target 4
+    key 0
+    bandwidth 100000000.0
+    port 1
+    weight 1
+  ]
+  edge [
+    source 14
+    target 11
+    key 0
+    bandwidth 10000000.0
+    port 2
+    weight 1
+  ]
+  edge [
+    source 14
+    target 21
+    key 0
+    bandwidth 100000000.0
+    port 3
+    weight 1
+  ]
+  edge [
+    source 15
+    target 0
+    key 0
+    bandwidth 25000000.0
+    port 0
+    weight 1
+  ]
+  edge [
+    source 15
+    target 21
+    key 0
+    bandwidth 40000000.0
+    port 1
+    weight 1
+  ]
+  edge [
+    source 16
+    target 3
+    key 0
+    bandwidth 10000000.0
+    port 0
+    weight 1
+  ]
+  edge [
+    source 16
+    target 18
+    key 0
+    bandwidth 10000000.0
+    port 1
+    weight 1
+  ]
+  edge [
+    source 17
+    target 5
+    key 0
+    bandwidth 10000000.0
+    port 0
+    weight 1
+  ]
+  edge [
+    source 17
+    target 21
+    key 0
+    bandwidth 25000000.0
+    port 1
+    weight 1
+  ]
+  edge [
+    source 18
+    target 4
+    key 0
+    bandwidth 100000000.0
+    port 0
+    weight 1
+  ]
+  edge [
+    source 18
+    target 16
+    key 0
+    bandwidth 10000000.0
+    port 1
+    weight 1
+  ]
+  edge [
+    source 18
+    target 21
+    key 0
+    bandwidth 100000000.0
+    port 2
+    weight 1
+  ]
+  edge [
+    source 19
+    target 0
+    key 0
+    bandwidth 40000000.0
+    port 0
+    weight 1
+  ]
+  edge [
+    source 19
+    target 8
+    key 0
+    bandwidth 25000000.0
+    port 1
+    weight 1
+  ]
+  edge [
+    source 20
+    target 3
+    key 0
+    bandwidth 1000000.0
+    port 0
+    weight 1
+  ]
+  edge [
+    source 20
+    target 9
+    key 0
+    bandwidth 1000000.0
+    port 1
+    weight 1
+  ]
+  edge [
+    source 21
+    target 6
+    key 0
+    bandwidth 250000000.0
+    port 0
+    weight 1
+  ]
+  edge [
+    source 21
+    target 10
+    key 0
+    bandwidth 4000000.0
+    port 1
+    weight 1
+  ]
+  edge [
+    source 21
+    target 14
+    key 0
+    bandwidth 100000000.0
+    port 2
+    weight 1
+  ]
+  edge [
+    source 21
+    target 15
+    key 0
+    bandwidth 40000000.0
+    port 3
+    weight 1
+  ]
+  edge [
+    source 21
+    target 17
+    key 0
+    bandwidth 25000000.0
+    port 4
+    weight 1
+  ]
+  edge [
+    source 21
+    target 18
+    key 0
+    bandwidth 100000000.0
+    port 5
+    weight 1
+  ]
+]

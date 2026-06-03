@@ -1,0 +1,19 @@
+{
+  "C:\\Users\\weize jie\\Desktop\\test\\graph DeepLearning\\RouteNet-Fermi-main\\topology_transfer\\checkpoints\\converted\\fat_tree_k128\\epoch02-val_mape0.59.pt": {
+    "experiment": "Fat-Tree k=128",
+    "ckpt_name": "epoch02-val_mape0.59.pt",
+    "topologies": {
+      "fat128": {
+        "mape": 9.373335540294647,
+        "mae": 4.506215191213414e-05,
+        "rmse": 9.29146699490957e-05,
+        "n_samples": 162544,
+        "max_requested": 10
+      }
+    }
+  },
+  "__config__": {
+    "max_samples": 50,
+    "device": "cpu"
+  }
+}

@@ -1,0 +1,1 @@
+import sys; sys.path.insert(0, r" c:\\\\Users\\\\weize jie\\\\Desktop\\\\test\\\\graph DeepLearning\\\\RouteNet-Fermi-main\); from topology_transfer import main; main()

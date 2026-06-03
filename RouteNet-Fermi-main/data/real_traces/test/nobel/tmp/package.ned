@@ -1,0 +1,3 @@
+package netsimulator;
+
+@license(LGPL);
